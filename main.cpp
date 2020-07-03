@@ -16,7 +16,7 @@ std::string error_code_to_string(const int nErrCode)
 {
     char chArray[AV_ERROR_MAX_STRING_SIZE];
 
-    // GAV: Probably better to be on the safe size and initialise the array.
+    // Probably better to be on the safe size and initialise the array.
     // The docs do not state if the string is null terminated :(
     std::fill(std::begin(chArray), std::end(chArray), '\0');
 
@@ -504,7 +504,7 @@ int main(int argc, char *argv[])
                                   pCdcCtxOut->field_order = AV_FIELD_TT;
                                   pCdcCtxOut->flags = (AV_CODEC_FLAG_INTERLACED_DCT | AV_CODEC_FLAG_INTERLACED_ME | AV_CODEC_FLAG_CLOSED_GOP);
 
-                                                   // WARN: Make some assumtpions here!
+                                                   // WARN: Make some assumptions here!
                                   pCdcCtxOut->time_base = AVRational{1,25};
                                   pCdcCtxOut->framerate = AVRational{25,1};
                                   pCdcCtxOut->sample_aspect_ratio = AVRational{64,45};

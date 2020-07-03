@@ -63,6 +63,8 @@ This application has been built with
 * CMake
 * C++ 17
 * Linux Ubuntu 20.04 LTS
+* FFmpeg v4.2.2
+* x264 v1.55
 
 Once built, the application can be run via:
 
