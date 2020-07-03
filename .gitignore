@@ -1,0 +1,33 @@
+#ignore build artifacts
+*.lib
+*.pdb
+*.obj
+*.exe
+*.dll
+*.a
+*.so
+*.so.2
+
+#ignore BUILD directory
+/build/*
+/binary/*
+/build.*/*
+/release/*
+/debug/*
+
+#ignore DOXYGEN docs
+/docs/*
+
+#CLion-created directories.
+/cmake-build-debug/*
+/cmake-build-release/*
+/cmake-build-minsizerel*
+/cmake-build-relwithdebinfo*
+
+/.idea/*
+
+# QtCreator
+*.user
+
+# Visual Studio Code
+**/.vscode
